@@ -1,0 +1,390 @@
+{
+    "inputs": [
+        {
+            "name": "cover_horizontal",
+            "file": "source_files/horizontal.png",
+            "focus_areas": [
+                {
+                    "name": "tight",
+                    "area": [
+                        75,
+                        60,
+                        500,
+                        191
+                    ]
+                },
+                {
+                    "name": "noice",
+                    "area": [
+                        40,
+                        36,
+                        600,
+                        220
+                    ]
+                }
+            ]
+        }
+    ],
+    "stamps": [
+        {
+            "name": "company_logo",
+            "image": "source_files/company_logo.png",
+            "position": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "disclaimer",
+            "text": "Screenshot does not represent final product.",
+            "font": "arial.ttf",
+            "font_size": 24,
+            "position": [
+                0.5,
+                0.05
+            ],
+            "text_color": [
+                150,
+                250,
+                100,
+                150
+            ]
+        }
+    ],
+    "targets": [
+        {
+            "name": "screenshots",
+            "conversions": [
+                {
+                    "name": "screeny_1",
+                    "input_file": "source_files/screenshot.png"
+                }
+            ]
+        },
+        {
+            "name": "screenshots2",
+            "conversions": [
+                {
+                    "name": "screeny_1",
+                    "input_file": "source_files/screenshot.png",
+                    "stamps": [
+                        "company_logo",
+                        "disclaimer"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "steam_store_page",
+            "conversions": [
+                {
+                    "name": "main_capsule",
+                    "input": "cover_close",
+                    "focus": "tight",
+                    "size_x": 616,
+                    "size_y": 353
+                },
+                {
+                    "name": "about_banner",
+                    "input": "cover_horizontal",
+                    "focus": "tight",
+                    "size_x": 616
+                },
+                {
+                    "name": "header_capsule",
+                    "input": "cover_close",
+                    "focus": "tight",
+                    "size_x": 460,
+                    "size_y": 215
+                },
+                {
+                    "name": "large_capsule",
+                    "input": "cover_horizontal",
+                    "focus": "tight",
+                    "size_x": 467,
+                    "size_y": 181
+                },
+                {
+                    "name": "small_capsule",
+                    "input": "cover_horizontal",
+                    "focus": "tight",
+                    "size_x": 231,
+                    "size_y": 87
+                }
+            ]
+        },
+        {
+            "name": "steam_library",
+            "conversions": [
+                {
+                    "name": "capsule",
+                    "input": "cover_no_logo",
+                    "focus": "spacey",
+                    "size_x": 600,
+                    "size_y": 900,
+                    "stamps": [
+                        "hammerting_logo"
+                    ]
+                },
+                {
+                    "name": "hero_banner",
+                    "input": "cover_horizontal_no_logo",
+                    "focus": "tight",
+                    "size_x": 3840,
+                    "size_y": 1240
+                },
+                {
+                    "name": "product_logo",
+                    "input": "logo_transparent",
+                    "focus": "tight",
+                    "size_x": 1280,
+                    "size_y": 720
+                }
+            ]
+        },
+        {
+            "name": "steam_community_hub",
+            "conversions": [
+                {
+                    "name": "cover_capsule",
+                    "input": "cover_horizontal",
+                    "focus": "tight",
+                    "size_x": 184,
+                    "size_y": 69
+                },
+                {
+                    "name": "group_header_image",
+                    "input": "cover_horizontal",
+                    "focus": "tight",
+                    "size_x": 444,
+                    "size_y": 208
+                },
+                {
+                    "name": "cover_avatar",
+                    "input": "cover_square",
+                    "focus": "tight",
+                    "size_x": 184,
+                    "size_y": 184
+                }
+            ]
+        },
+        {
+            "name": "twitter",
+            "conversions": [
+                {
+                    "name": "header",
+                    "input": "cover_horizontal",
+                    "focus": "tight",
+                    "size_x": 1500,
+                    "size_y": 500
+                },
+                {
+                    "name": "profile",
+                    "input": "cover_square",
+                    "focus": "tight",
+                    "size_x": 400,
+                    "size_y": 400
+                },
+                {
+                    "name": "image_website_card_wide",
+                    "input": "cover_horizontal",
+                    "focus": "tight",
+                    "size_x": 800,
+                    "size_y": 418
+                },
+                {
+                    "name": "image_website_card",
+                    "input": "cover_square",
+                    "focus": "tight",
+                    "size_x": 800,
+                    "size_y": 800
+                }
+            ]
+        },
+        {
+            "name": "facebook",
+            "conversions": [
+                {
+                    "name": "cover",
+                    "input": "cover_horizontal",
+                    "focus": "tight",
+                    "size_x": 828,
+                    "size_y": 315
+                },
+                {
+                    "name": "profile",
+                    "input": "cover_square",
+                    "focus": "tight",
+                    "size_x": 180,
+                    "size_y": 180
+                }
+            ]
+        },
+        {
+            "name": "youtube",
+            "conversions": [
+                {
+                    "name": "channel_icon",
+                    "input": "cover_square",
+                    "focus": "tight",
+                    "size_x": 800,
+                    "size_y": 800
+                },
+                {
+                    "name": "channel_icon_small",
+                    "input": "cover_square",
+                    "focus": "tight",
+                    "size_x": 98,
+                    "size_y": 98
+                },
+                {
+                    "name": "channel_art",
+                    "input": "cover_horizontal",
+                    "focus": "noice",
+                    "size_x": 2560,
+                    "size_y": 1440
+                }
+            ]
+        },
+        {
+            "name": "reddit",
+            "conversions": [
+                {
+                    "name": "header",
+                    "input": "cover_horizontal",
+                    "focus": "tight",
+                    "size_x": 1280,
+                    "size_y": 384
+                },
+                {
+                    "name": "banner",
+                    "input": "cover_horizontal",
+                    "focus": "tight",
+                    "size_x": 4000,
+                    "size_y": 128
+                },
+                {
+                    "name": "icon",
+                    "input": "cover_square",
+                    "focus": "spacey",
+                    "size_x": 256,
+                    "size_y": 256
+                }
+            ]
+        },
+        {
+            "name": "discord",
+            "conversions": [
+                {
+                    "name": "server_image",
+                    "input": "cover_square",
+                    "focus": "tight",
+                    "size_x": 512,
+                    "size_y": 512
+                },
+                {
+                    "name": "app_icon",
+                    "input": "cover_square",
+                    "focus": "tight",
+                    "size_x": 1024,
+                    "size_y": 1024
+                }
+            ]
+        },
+        {
+            "name": "itch",
+            "conversions": [
+                {
+                    "name": "cover",
+                    "input": "cover_close",
+                    "focus": "tight",
+                    "size_x": 630,
+                    "size_y": 500
+                },
+                {
+                    "name": "banner",
+                    "input": "cover_horizontal",
+                    "focus": "tight",
+                    "size_x": 2048,
+                    "size_y": 880
+                },
+                {
+                    "name": "background",
+                    "input": "cover_horizontal",
+                    "focus": "tight",
+                    "size_x": 1923,
+                    "size_y": 724
+                },
+                {
+                    "name": "devlog_image",
+                    "input": "cover_horizontal",
+                    "focus": "tight",
+                    "size_x": 500,
+                    "size_y": 281
+                }
+            ]
+        },
+        {
+            "name": "imgur",
+            "conversions": [
+                {
+                    "name": "hammerting_01",
+                    "input_file": "../screenshots/third/png/hammerting_steam_image_01.png",
+                    "apply_vignette": false,
+                    "stamps": [
+                        "watermark"
+                    ]
+                },
+                {
+                    "name": "hammerting_02",
+                    "input_file": "../screenshots/third/png/hammerting_steam_image_02.png",
+                    "apply_vignette": false,
+                    "stamps": [
+                        "watermark"
+                    ]
+                },
+                {
+                    "name": "hammerting_03",
+                    "input_file": "../screenshots/third/png/hammerting_steam_image_03.png",
+                    "apply_vignette": false,
+                    "stamps": [
+                        "watermark"
+                    ]
+                },
+                {
+                    "name": "hammerting_04",
+                    "input_file": "../screenshots/third/png/hammerting_steam_image_04.png",
+                    "apply_vignette": false,
+                    "stamps": [
+                        "watermark"
+                    ]
+                },
+                {
+                    "name": "hammerting_05",
+                    "input_file": "../screenshots/third/png/hammerting_steam_image_05.png",
+                    "apply_vignette": false,
+                    "stamps": [
+                        "watermark"
+                    ]
+                },
+                {
+                    "name": "hammerting_06",
+                    "input_file": "../screenshots/third/png/hammerting_steam_image_06.png",
+                    "apply_vignette": false,
+                    "stamps": [
+                        "watermark"
+                    ]
+                },
+                {
+                    "name": "hammerting_07",
+                    "input_file": "../screenshots/third/png/hammerting_steam_image_07.png",
+                    "apply_vignette": false,
+                    "stamps": [
+                        "watermark"
+                    ]
+                }
+            ]
+        },
+        {}
+    ]
+}
