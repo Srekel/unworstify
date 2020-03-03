@@ -226,15 +226,16 @@ def apply_vignette(im):
     size_x, size_y = im.size
     im = im.convert("RGBA")
     pixels = im.load()
+    factor = 40
 
     for y in range(size_y):
         for x in range(size_x):
-            factor = 1
             uv_x = x / size_x
             uv_y = y / size_y
             uv_x2 = uv_x * (1 - uv_y)
             uv_y2 = uv_y * (1 - uv_x)
-            vig = uv_x2 * uv_y2 * 40
+            vig = uv_x2 * uv_y2 * factor
+
             vig = math.pow(vig, 0.15)
             vig = min(1, vig)
             r, g, b, a = pixels[x, y]
@@ -281,6 +282,9 @@ def apply_stamp_text(im, stamp):
 def try_convert_to_rgb(im):
     size_x, size_y = im.size
     pixels = im.load()
+
+    if im.getbands() == ("R", "G", "B"):
+        return im
 
     print("Checking for transparency")
     for y in range(size_y):
@@ -350,7 +354,7 @@ def convert_targets(base_path, settings, inputs, stamps):
                         im = apply_stamp_text(im, stamp)
 
             # Vignette
-            do_vignette = True
+            do_vignette = False
             if "apply_vignette" in conv:
                 do_vignette = conv["apply_vignette"]
             if do_vignette:

@@ -7,19 +7,67 @@
                 {
                     "name": "tight",
                     "area": [
-                        75,
-                        60,
-                        500,
-                        191
+                        150,
+                        120,
+                        1000,
+                        380
                     ]
                 },
                 {
                     "name": "noice",
                     "area": [
+                        80,
+                        75,
+                        1200,
+                        440
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "cover_close",
+            "file": "source_files/close.png",
+            "focus_areas": [
+                {
+                    "name": "tight",
+                    "area": [
+                        420,
+                        80,
+                        1080,
+                        800
+                    ]
+                },
+                {
+                    "name": "noice",
+                    "area": [
+                        300,
                         40,
-                        36,
-                        600,
-                        220
+                        1400,
+                        800
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "cover_close",
+            "file": "source_files/close.png",
+            "focus_areas": [
+                {
+                    "name": "tight",
+                    "area": [
+                        420,
+                        80,
+                        1080,
+                        800
+                    ]
+                },
+                {
+                    "name": "noice",
+                    "area": [
+                        300,
+                        40,
+                        1400,
+                        800
                     ]
                 }
             ]
@@ -30,8 +78,8 @@
             "name": "company_logo",
             "image": "source_files/company_logo.png",
             "position": [
-                50,
-                50
+                5,
+                5
             ]
         },
         {
@@ -41,12 +89,12 @@
             "font_size": 24,
             "position": [
                 0.5,
-                0.05
+                0.1
             ],
             "text_color": [
-                150,
-                250,
-                100,
+                50,
+                50,
+                50,
                 150
             ]
         }
@@ -57,15 +105,11 @@
             "conversions": [
                 {
                     "name": "screeny_1",
-                    "input_file": "source_files/screenshot.png"
-                }
-            ]
-        },
-        {
-            "name": "screenshots2",
-            "conversions": [
+                    "input_file": "source_files/screenshot.png",
+                    "apply_vignette": true
+                },
                 {
-                    "name": "screeny_1",
+                    "name": "screeny_2",
                     "input_file": "source_files/screenshot.png",
                     "stamps": [
                         "company_logo",
@@ -323,68 +367,6 @@
                     "size_y": 281
                 }
             ]
-        },
-        {
-            "name": "imgur",
-            "conversions": [
-                {
-                    "name": "hammerting_01",
-                    "input_file": "../screenshots/third/png/hammerting_steam_image_01.png",
-                    "apply_vignette": false,
-                    "stamps": [
-                        "watermark"
-                    ]
-                },
-                {
-                    "name": "hammerting_02",
-                    "input_file": "../screenshots/third/png/hammerting_steam_image_02.png",
-                    "apply_vignette": false,
-                    "stamps": [
-                        "watermark"
-                    ]
-                },
-                {
-                    "name": "hammerting_03",
-                    "input_file": "../screenshots/third/png/hammerting_steam_image_03.png",
-                    "apply_vignette": false,
-                    "stamps": [
-                        "watermark"
-                    ]
-                },
-                {
-                    "name": "hammerting_04",
-                    "input_file": "../screenshots/third/png/hammerting_steam_image_04.png",
-                    "apply_vignette": false,
-                    "stamps": [
-                        "watermark"
-                    ]
-                },
-                {
-                    "name": "hammerting_05",
-                    "input_file": "../screenshots/third/png/hammerting_steam_image_05.png",
-                    "apply_vignette": false,
-                    "stamps": [
-                        "watermark"
-                    ]
-                },
-                {
-                    "name": "hammerting_06",
-                    "input_file": "../screenshots/third/png/hammerting_steam_image_06.png",
-                    "apply_vignette": false,
-                    "stamps": [
-                        "watermark"
-                    ]
-                },
-                {
-                    "name": "hammerting_07",
-                    "input_file": "../screenshots/third/png/hammerting_steam_image_07.png",
-                    "apply_vignette": false,
-                    "stamps": [
-                        "watermark"
-                    ]
-                }
-            ]
-        },
-        {}
+        }
     ]
 }
